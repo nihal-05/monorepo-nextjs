@@ -1,14 +1,15 @@
 {
   "name": "ui",
   "version": "0.0.0",
-  "main": "./index.tsx",
-  "types": "./index.tsx",
+  "main": "./components/index.tsx",
+  "types": "./components/index.tsx",
   "license": "MIT",
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",
     "generate:component": "turbo gen react-component"
   },
   "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.2",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "eslint": "^7.32.0",
@@ -16,5 +17,16 @@
     "react": "^18.2.0",
     "tsconfig": "*",
     "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.5",
+    "@types/node": "20.5.1",
+    "interfaces": "*",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.4.4",
+    "next": "13.4.19",
+    "react-dom": "18.2.0"
   }
 }
