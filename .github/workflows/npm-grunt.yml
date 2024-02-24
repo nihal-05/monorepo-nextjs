@@ -1,0 +1,17 @@
+name: NodeJS with Grunt
+
+on:
+  push:
+    branches: [ "main" ]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - shell: bash
+      env:
+        SUPER_SECRET: ${{ secrets.REPO_NAME }}
+      run: |
+        echo "$SUPER_SECRET"
+      
